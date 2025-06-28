@@ -31,6 +31,11 @@ Este proyecto implementa un **sistema concurrente** distribuido en múltiples pr
 1. **Clonar o copiar el repositorio**
    ```bash
    git clone https://github.com/lgsosa/ComputacionII
+   cd ComputacionII/TP_1/proyecto_biometrico
+
+2. **Ejecutar programa principal**
+   
+   python3 main.py
 
 👩‍💻 Autora
 Luciana Sosa
