@@ -29,7 +29,7 @@ Este proyecto implementa un **sistema concurrente** distribuido en múltiples pr
 
 1. **Clonar o copiar el repositorio**
    ```bash
-   git clone <URL-del-repo>
+   git clone https://github.com/lgsosa/ComputacionII
    cd proyecto_biometrico
 
 ## Arquitectura de la TAREA 1
