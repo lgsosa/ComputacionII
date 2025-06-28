@@ -23,7 +23,6 @@ Este proyecto implementa un **sistema concurrente** distribuido en múltiples pr
   - `datetime`
   - `statistics`
   - `time`
-  - `numpy`
 
 ---
 
