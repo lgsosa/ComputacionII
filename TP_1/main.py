@@ -1,8 +1,8 @@
 import time
 from datetime import datetime
-from multiprocessing import Process, Pipe, Queue
-from TP_1.analizador import analizador
-from TP_1.verificador import verificador
+from multiprocessing import Process, Pipe, Queue, Lock
+from analizador import analizador
+from verificador import verificador
 from random import randint
 
 def generar_dato():
@@ -14,22 +14,19 @@ def generar_dato():
     }
 
 def main():
-    # Crear pipes para enviar datos completos a analizadores
     parent_a, child_a = Pipe()
     parent_b, child_b = Pipe()
     parent_c, child_c = Pipe()
 
-    # Crear colas para recibir resultados de analizadores
     queue_a = Queue()
     queue_b = Queue()
     queue_c = Queue()
 
-    # Crear procesos analizador
     p_a = Process(target=analizador, args=(child_a, queue_a, 'frecuencia'))
     p_b = Process(target=analizador, args=(child_b, queue_b, 'presion'))
     p_c = Process(target=analizador, args=(child_c, queue_c, 'oxigeno'))
 
-    # Crear proceso verificador (solo muestra resultados)
+    #(solo muestra resultados)
     p_ver = Process(target=verificador, args=(queue_a, queue_b, queue_c))
 
     # Iniciar procesos
@@ -67,6 +64,7 @@ def main():
 
     print("Proceso verificador finalizado.")
     print("Programa principal terminó.")
+
 
 if __name__ == "__main__":
     main()
