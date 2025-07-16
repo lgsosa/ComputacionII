@@ -34,12 +34,14 @@ Este proyecto implementa un **sistema concurrente** distribuido en múltiples pr
    cd ComputacionII/TP_1/proyecto_biometrico
 
 2. **(Opcional) Crear y activar un entorno virtual**
-
+   
+   ```bash
    python3 -m venv venv
    source venv/bin/activate
+   
 
 3. **Ejecutar programa principal**
-   
+      ```bash
    python3 main.py
 
 👩‍💻 Autora
