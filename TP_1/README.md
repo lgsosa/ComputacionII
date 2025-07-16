@@ -33,7 +33,12 @@ Este proyecto implementa un **sistema concurrente** distribuido en múltiples pr
    git clone https://github.com/lgsosa/ComputacionII
    cd ComputacionII/TP_1/proyecto_biometrico
 
-2. **Ejecutar programa principal**
+2. **(Opcional) Crear y activar un entorno virtual**
+
+   python3 -m venv venv
+   source venv/bin/activate
+
+3. **Ejecutar programa principal**
    
    python3 main.py
 
