@@ -47,5 +47,5 @@ Este proyecto implementa un **sistema concurrente** distribuido en múltiples pr
 👩‍💻 Autora
 Luciana Sosa
 Estudiante de Ingeniería en Informática
-Universidad de Mendoza
+-Universidad de Mendoza
 =======
