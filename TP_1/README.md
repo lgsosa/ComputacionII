@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🧠 Sistema Concurrente de Análisis Biométrico
 
 > Trabajo Práctico 1 – Computación II  
@@ -23,6 +22,9 @@ Este proyecto implementa un **sistema concurrente** distribuido en múltiples pr
   - `datetime`
   - `statistics`
   - `time`
+  - `json`
+  - `hashlib`
+  - `csv`
 
 ---
 
@@ -31,16 +33,21 @@ Este proyecto implementa un **sistema concurrente** distribuido en múltiples pr
 1. **Clonar o copiar el repositorio**
    ```bash
    git clone https://github.com/lgsosa/ComputacionII
-   cd ComputacionII/TP_1/proyecto_biometrico
+   cd ComputacionII/TP_1/proyecto_biometrico/TP_1
 
 2. **(Opcional) Crear y activar un entorno virtual**
-
+   ```bash
    python3 -m venv venv
    source venv/bin/activate
 
 3. **Ejecutar programa principal**
-   
+   ```bash   
    python3 main.py
+
+4. **Ejecutar el script con:**
+   ```bash
+   python3 verificar_cadena.py
+Al finalizar, revisa el archivo reporte.txt para ver el resultado detallado de la verificación.
 
 👩‍💻 Autora
 Luciana Sosa
